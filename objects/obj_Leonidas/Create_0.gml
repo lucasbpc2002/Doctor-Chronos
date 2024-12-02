@@ -1,0 +1,1 @@
+global.life_Chefe = 16;
