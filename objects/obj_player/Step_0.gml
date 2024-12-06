@@ -75,7 +75,7 @@ var gun_x = x * flipped;
 var _xx = x + lengthdir_x(-25, image_angle);
 var y_offset = lengthdir_y(-25, image_angle);
 
-if (_attack and global.bullet > 0) {
+if (_attack and global.bullet > 0 and global.life > 0) {
     with (instance_create_layer(_xx, y - 80, "Shoot", obj_shootPlayer)) {
         global.bullet--;
         // Velocidade do tiro
