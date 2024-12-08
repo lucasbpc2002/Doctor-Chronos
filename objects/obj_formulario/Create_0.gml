@@ -1,5 +1,3 @@
-// Variáveis para armazenar o nome de usuário
-
 
 key = "" ;
 global.username ="";

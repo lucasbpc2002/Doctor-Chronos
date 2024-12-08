@@ -1,1 +1,1 @@
-global.life_Chefe = 16;
+global.life_chefe = 16;

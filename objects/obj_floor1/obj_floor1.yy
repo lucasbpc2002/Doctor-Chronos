@@ -6,8 +6,8 @@
   "name":"obj_floor1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objs_personagens",
+    "path":"folders/Objetos/Objs_personagens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

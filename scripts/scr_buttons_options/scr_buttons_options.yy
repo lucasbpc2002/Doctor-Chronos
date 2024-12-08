@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_buttons_options",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_buttons_options",
+  "parent":{
+    "name":"Scr_quiz",
+    "path":"folders/Scripts/Scr_quiz.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

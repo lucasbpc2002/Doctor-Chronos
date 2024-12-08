@@ -8,8 +8,8 @@
   "name":"obj_titulo_rank",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objs_form_rank",
+    "path":"folders/Objetos/Objs_form_rank.yy",
   },
   "parentObjectId":null,
   "persistent":false,

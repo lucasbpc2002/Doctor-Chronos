@@ -2,14 +2,14 @@
   "$GMObject":"",
   "%Name":"obj_enemy",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shootPlayer","path":"objects/obj_shootPlayer/obj_shootPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shoot_player","path":"objects/obj_shoot_player/obj_shoot_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objs_personagens",
+    "path":"folders/Objetos/Objs_personagens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

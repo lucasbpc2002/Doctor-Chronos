@@ -5,11 +5,11 @@ draw_self();
 if (mouse_x >= x && mouse_x <= x + 128 && mouse_y >= y && mouse_y <= y + 64) {
 draw_set_color(c_purple);
 draw_set_valign(fa_middle);
-draw_set_font(Font_button);
+draw_set_font(fnt_button);
 draw_text(x-40, y,"Enviar");
 }else{
 draw_set_color(c_white);
-draw_set_font(Font_button);
+draw_set_font(fnt_button);
 draw_set_valign(fa_middle);
 draw_text(x-40, y,"Enviar");
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_titulos_fases_rank",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_titulos_fases_rank",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

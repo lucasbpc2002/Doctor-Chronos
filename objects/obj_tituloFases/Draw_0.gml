@@ -1,1 +1,1 @@
-scr_titulosFasesRank("Fases")
+scr_titulos_fases_rank("Fases",fnt_1)

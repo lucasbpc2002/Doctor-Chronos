@@ -1,5 +1,5 @@
 
-function scr_menu_buttons(nome){
+function scr_menu_buttons(_nome){
 button_over = false; // Variável para indicar se o mouse está sobre o botão
 
 
@@ -8,8 +8,8 @@ if (mouse_x >= x && mouse_x <= x + 128 && mouse_y >= y && mouse_y <= y + 64 || (
 ) {
 draw_set_color(make_color_rgb(133, 96, 169));
 draw_set_valign(fa_middle);
-draw_set_font(Font_button_menu);
-draw_text(x+20, y+30,nome);
+draw_set_font(fnt_button_menu);
+draw_text(x+20, y+30,_nome);
 button_over = true;
 image_blend=make_color_rgb(133, 96, 169);//cor do retangulo
 image_alpha =0.5;//opacidade
@@ -17,9 +17,9 @@ image_alpha =0.5;//opacidade
 }else{
 button_over = false;
 draw_set_color(c_white);
-draw_set_font(Font_button_menu);
+draw_set_font(fnt_button_menu);
 draw_set_valign(fa_middle);
-draw_text(x+20, y+30,nome);
+draw_text(x+20, y+30,_nome);
 image_blend=make_color_rgb(102, 45, 145);
 image_alpha =0.255;
 }

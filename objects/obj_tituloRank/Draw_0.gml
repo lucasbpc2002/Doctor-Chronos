@@ -1,1 +1,1 @@
-scr_titulosFasesRank("Ranking por fases")
+scr_titulos_fases_rank("Ranking por fases", fnt_1)

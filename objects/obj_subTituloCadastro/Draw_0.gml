@@ -1,0 +1,1 @@
+scr_titulos_fases_rank("Cadastro",fnt_menu_subTitulo_cadastro)

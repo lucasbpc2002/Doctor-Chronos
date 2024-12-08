@@ -1,5 +1,5 @@
 #region Controles
-var _left, _right, _jump, _squat, _attack, face;
+var _left, _right, _jump, _squat, _attack;
 _right = keyboard_check(ord("D")); // direita
 _left = keyboard_check(ord("A")); // esquerda
 _jump = keyboard_check(ord("W")); // pulo
@@ -8,13 +8,13 @@ _attack = keyboard_check(ord("J")); // ataque de fogo
 #endregion
 
 #region Movimentação
-var move = (_left - _right) * max_hspd;
+var _move = (_left - _right) * max_hspd;
 
-hspd = move * spd;
+hspd = _move * spd;
 vspd += grv;
-hspd = lerp(hspd, move, spd);
+hspd = lerp(hspd, _move, spd);
 
-if (room == Room1) {
+if (room == rm_room1) {
     // COLISÃO HORIZONTAL 1
     if (place_meeting(x + hspd, y, obj_floor1)) {
         var _hspd = sign(hspd);
@@ -70,13 +70,13 @@ if (room == Room1) {
 #endregion
 
 #region Ataque
-var flipped = direction;
-var gun_x = x * flipped;
+var _flipped = direction;
+var _gun_x = x * _flipped;
 var _xx = x + lengthdir_x(-25, image_angle);
-var y_offset = lengthdir_y(-25, image_angle);
+var _y_offset = lengthdir_y(-25, image_angle);
 
 if (_attack and global.bullet > 0 and global.life > 0) {
-    with (instance_create_layer(_xx, y - 80, "Shoot", obj_shootPlayer)) {
+    with (instance_create_layer(_xx, y - 80, "Shoot", obj_shoot_player)) {
         global.bullet--;
         // Velocidade do tiro
         speed = 15;

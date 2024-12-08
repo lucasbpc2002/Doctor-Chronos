@@ -7,7 +7,7 @@ draw_set_valign(fa_top);
 //draw_text(x-50, y-50, "Cadastro de Nome");
 
 // Desenha o nome digitado
-draw_set_font(Font_1);
+draw_set_font(fnt_1);
 draw_text(x-1, y-200, "Cadastrar Nome ");
 
 //reset

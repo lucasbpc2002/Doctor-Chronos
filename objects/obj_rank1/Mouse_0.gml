@@ -1,1 +1,1 @@
-room_goto(Room_Ranking);
+room_goto(rm_room_ranking);
