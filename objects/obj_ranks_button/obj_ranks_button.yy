@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_option_1",
+  "%Name":"obj_ranks_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_option_1",
+  "name":"obj_ranks_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Scr_quiz",
-    "path":"folders/Scripts/Scr_quiz.yy",
+    "name":"Objs_Menu",
+    "path":"folders/Objetos/Objs_Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_options",
-    "path":"sprites/spr_button_options/spr_button_options.yy",
+    "name":"spr_botoes",
+    "path":"sprites/spr_botoes/spr_botoes.yy",
   },
   "spriteMaskId":null,
   "visible":true,

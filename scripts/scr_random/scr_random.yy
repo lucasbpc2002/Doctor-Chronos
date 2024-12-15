@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_selecao_pergunta",
+  "%Name":"scr_random",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_selecao_pergunta",
+  "name":"scr_random",
   "parent":{
     "name":"Scr_quiz",
     "path":"folders/Scripts/Scr_quiz.yy",

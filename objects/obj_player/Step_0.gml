@@ -68,7 +68,6 @@ if (room == rm_room1) {
     }
 }
 #endregion
-
 #region Ataque
 var flipped = sign(image_xscale); // Direção do personagem (-1 para esquerda, 1 para direita)
 var gun_offset_x = -25 * flipped; // Ajuste horizontal baseado na direção
@@ -80,7 +79,7 @@ var gun_y = y + gun_offset_y;
 
 if (sprite_index != spr_player_morto and _attack and global.bullet > 0 and !global.isShooting) {
     global.isShooting = true; // Impede que outro tiro seja disparado até que o primeiro acerte ou o botão seja solto
-    with (instance_create_layer(gun_x, gun_y, "Shoot", obj_shootPlayer)) {
+    with (instance_create_layer(gun_x, gun_y, "Shoot", obj_shoot_player)) {
         global.bullet--;
         // Velocidade do tiro
         speed = 15;
@@ -101,7 +100,7 @@ if (!_attack) {
 
 #region Mudança de sprites
 if (hspd != 0) image_xscale = sign(hspd - max_hspd);
-
+/*
 // Função para trocar a animação
 function change_animation() {
     if (is_attacking) {
@@ -139,7 +138,7 @@ change_animation();
 if (alarm[0] == -1 && is_attacking) {
     is_attacking = false;
 }
-
+*/
 #endregion
 
 #region Configurações de hit
