@@ -70,29 +70,101 @@ if (room == rm_room1) {
 #endregion
 
 #region Ataque
-var _flipped = direction;
-var _gun_x = x * _flipped;
-var _xx = x + lengthdir_x(-25, image_angle);
-var _y_offset = lengthdir_y(-25, image_angle);
+var flipped = sign(image_xscale); // Direção do personagem (-1 para esquerda, 1 para direita)
+var gun_offset_x = -25 * flipped; // Ajuste horizontal baseado na direção
+var gun_offset_y = -80; // Ajuste fixo de altura
 
-if (_attack and global.bullet > 0 and global.life > 0) {
-    with (instance_create_layer(_xx, y - 80, "Shoot", obj_shoot_player)) {
+// Coordenadas para o tiro
+var gun_x = x + gun_offset_x;
+var gun_y = y + gun_offset_y;
+
+if (sprite_index != spr_player_morto and _attack and global.bullet > 0 and !global.isShooting) {
+    global.isShooting = true; // Impede que outro tiro seja disparado até que o primeiro acerte ou o botão seja solto
+    with (instance_create_layer(gun_x, gun_y, "Shoot", obj_shootPlayer)) {
         global.bullet--;
         // Velocidade do tiro
         speed = 15;
         // Direção do tiro
-        direction = -90 + 90 * other.image_xscale;
-        // Ângulo do tiro
-        image_angle = direction;
+        direction = 0; // Para direita ou esquerda baseado em 'flipped'
+        if(flipped == -1){
+            direction = 180;
+        }
+        image_xscale = flipped; // Garante que o tiro também acompanha a direção
     }
+}
+
+// Liberar o controle de disparo quando o botão for solto
+if (!_attack) {
+    global.isShooting = false;
 }
 #endregion
 
 #region Mudança de sprites
 if (hspd != 0) image_xscale = sign(hspd - max_hspd);
+
+// Função para trocar a animação
+function change_animation() {
+    if (is_attacking) {
+        sprite_index = sprite_attack;
+    } else if (is_jumping) {
+        sprite_index = sprite_jump;
+    } else if (is_moving) {
+        sprite_index = sprite_walk;
+    } else {
+        sprite_index = sprite_idle;
+    }
+}
+
+// Atualização do estado do jogador (exemplo)
+if (keyboard_check(ord("A")) || keyboard_check(ord("D"))) {
+    is_moving = true;
+} else {
+    is_moving = false;
+}
+
+if (keyboard_check_pressed(ord("W"))) {
+    is_jumping = true;
+}
+
+if (keyboard_check_pressed(ord("J"))) { // Botão de ataque (ajuste conforme necessário)
+    is_attacking = true;
+    // Iniciar um alarme para controlar a duração da animação de ataque
+    alarm[0] = sprite_get_number(sprite_attack) * 10;
+}
+
+// Atualização da animação
+change_animation();
+
+// Verificação do fim da animação de ataque
+if (alarm[0] == -1 && is_attacking) {
+    is_attacking = false;
+}
+
 #endregion
 
 #region Configurações de hit
+// Variável para controlar o estado da animação
+var isHit = false;
+
+// Verifica se a vida diminuiu e se o personagem não está em estado de hit
+if (global.life < global.previous_life && !isHit) {
+    // Troca a animação para a animação de acerto
+    sprite_index = spr_player_acertado;
+    image_index = 0;
+    isHit = true;
+    alarm[0] = sprite_get_number(spr_player_acertado) * 10;
+}
+
+// Verifica se a animação de acerto terminou
+if (alarm[0] == -1 && isHit) {
+    sprite_index = spr_player;
+    isHit = false;
+}
+
+// Armazena o valor anterior de vida
+global.previous_life = global.life;
+
+// morte troca de animação
 if (global.life < 1) {
     if (sprite_index != spr_player_morto) {
         sprite_index = spr_player_morto; // Muda para o sprite de "morto"

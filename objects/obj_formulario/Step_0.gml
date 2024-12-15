@@ -1,9 +1,9 @@
 //Apagar
 if (keyboard_check_pressed(vk_backspace)) {
-	var nome= global.username
-    if (string_length(nome) > 0) {
+	var _nome= string(global.username)
+    if (string_length(_nome) > 0) {
         // Apagar o último caractere do nome de usuário
-        global.username = string_delete(nome, string_length(nome), 1);
+        global.username = string_delete(_nome, string_length(_nome), 1);
     }
 }
 

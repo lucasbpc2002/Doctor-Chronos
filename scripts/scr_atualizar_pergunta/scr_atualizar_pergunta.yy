@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_atualizar_pergunta",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_atualizar_pergunta",
+  "parent":{
+    "name":"Scr_quiz",
+    "path":"folders/Scripts/Scr_quiz.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

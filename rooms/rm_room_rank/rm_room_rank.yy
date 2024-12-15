@@ -1,13 +1,13 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_room_ranking",
+  "%Name":"rm_room_rank",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_6FB276DB","path":"rooms/rm_room_ranking/rm_room_ranking.yy",},
-    {"name":"inst_5E4545A1","path":"rooms/rm_room_ranking/rm_room_ranking.yy",},
+    {"name":"inst_6FB276DB","path":"rooms/rm_room_rank/rm_room_rank.yy",},
+    {"name":"inst_5E4545A1","path":"rooms/rm_room_rank/rm_room_rank.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,7 +27,7 @@
         {"name":"g_ColourBalanceHighlights","type":0,"value":"0",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_background_menu","path":"sprites/spr_background_menu/spr_background_menu.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_room_ranking",
+  "name":"rm_room_rank",
   "parent":{
     "name":"Cenas",
     "path":"folders/Cenas.yy",
