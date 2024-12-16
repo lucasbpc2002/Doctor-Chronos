@@ -154,8 +154,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_room_menu","path":"rooms/rm_room_menu/rm_room_menu.yy",},},
-    {"roomId":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},},
     {"roomId":{"name":"rm_room2","path":"rooms/rm_room2/rm_room2.yy",},},
+    {"roomId":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},},
     {"roomId":{"name":"rm_room1","path":"rooms/rm_room1/rm_room1.yy",},},
     {"roomId":{"name":"rm_room_quiz","path":"rooms/rm_room_quiz/rm_room_quiz.yy",},},
     {"roomId":{"name":"rm_room_rank","path":"rooms/rm_room_rank/rm_room_rank.yy",},},

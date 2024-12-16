@@ -140,7 +140,6 @@ if (alarm[0] == -1 && is_attacking) {
 }
 */
 #endregion
-
 #region Configurações de hit
 // Variável para controlar o estado da animação
 var isHit = false;
@@ -158,6 +157,16 @@ if (global.life < global.previous_life && !isHit) {
 if (alarm[0] == -1 && isHit) {
     sprite_index = spr_player;
     isHit = false;
+}
+if (sprite_index == spr_player_acertado) {
+    // Verifica se o índice da imagem atingiu o último frame da animação
+    if (image_index >= image_number - 1) {
+        // Troca para o sprite padrão
+        sprite_index = spr_player;
+
+        // Opcional: Reinicia o índice da imagem no novo sprite
+        image_index = 0;
+    }
 }
 
 // Armazena o valor anterior de vida
