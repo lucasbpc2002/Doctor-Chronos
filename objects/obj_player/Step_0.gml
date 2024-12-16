@@ -152,7 +152,7 @@ if (global.life < global.previous_life && !isHit) {
     isHit = true;
     alarm[0] = sprite_get_number(spr_player_acertado) * 10;
 }
-
+show_message("testando")
 // Verifica se a animação de acerto terminou
 if (alarm[0] == -1 && isHit) {
     sprite_index = spr_player;
