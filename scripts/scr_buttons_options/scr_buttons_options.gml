@@ -6,12 +6,20 @@ button_over = false; // Variável para indicar se o mouse está sobre o botão
 
 
 draw_self();
+var altura_caixa = 30;
+var largura_caixa =300; 
+
 if (mouse_x >= x && mouse_x <= x + 128 && mouse_y >= y && mouse_y <= y + 64 || (point_in_rectangle(mouse_x, mouse_y, bbox_left, bbox_top, bbox_right, bbox_bottom))
 ) {
+	
+
+
 draw_set_color(make_color_rgb(133, 96, 169));
 draw_set_valign(fa_middle);
 draw_set_font(fnt_questions);
-draw_text(x, y,_nome);
+ draw_text_ext(x+10,y, _nome, altura_caixa, largura_caixa);
+
+
 button_over = true;
 image_blend=make_color_rgb(133, 96, 169);//cor do retangulo
 image_alpha =0.5;//opacidade
@@ -21,7 +29,8 @@ button_over = false;
 draw_set_color(c_white);
 draw_set_font(fnt_questions);
 draw_set_valign(fa_middle);
-draw_text(x, y,_nome);
+
+ draw_text_ext(x+10,y, _nome, altura_caixa,largura_caixa);
 image_blend=make_color_rgb(102, 45, 145);
 image_alpha =0.300;
 }

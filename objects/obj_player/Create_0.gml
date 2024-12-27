@@ -12,9 +12,14 @@ global.bullet = 6;
 image_speed = 0.6;
 is_attacking = false
 is_moving = false;
-is_jumping = false;
+is_morto=false;
 isHit = false;
+is_jumping = false;
+is_acertado=false;
 sprite_idle = spr_player;
+sprite_morto = spr_player_morto;
 sprite_walk = spr_player_andando;
 sprite_jump = spr_player_pulo;
 sprite_attack = spr_player_attack;
+sprite_acertado= spr_player_acertado;
+

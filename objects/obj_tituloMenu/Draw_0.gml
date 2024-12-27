@@ -13,7 +13,7 @@ draw_text(x+20, y-15, "Menu ");
 
 
 //reset
-draw_set_font(-1);
-draw_set_color(-1);  // Define a cor do texto como branco
+draw_set_color(-1);
+draw_set_font(-1); 
 draw_set_halign(-1);
 draw_set_valign(-1);

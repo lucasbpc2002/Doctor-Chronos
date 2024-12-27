@@ -128,12 +128,19 @@ function change_animation() {
         sprite_index = sprite_jump;
     } else if (is_moving) {
         sprite_index = sprite_walk; 
-    } else {
+    } else if (is_acertado) {
+     	sprite_index = sprite_acertado;
+	} else if(is_morto){
+		sprite_index= sprite_morto;
+	}
+	else {
         sprite_index = sprite_idle;
+
     }
 }
+#endregion
 
-// Atualização do estado do jogador
+#region Atualização do estado do jogador
 if (_left || _right) {
     is_moving = true;
 } else {
@@ -145,45 +152,43 @@ if (_jump and !is_jumping) {
 } else if (vspd == 0) {
     is_jumping = false;
 }
-
-// Atualização da animação
-if (!is_attacking) {
-    change_animation();
-}
-#endregion
-
-#region Configurações de hit
-// Variável para controlar o estado da animação
-
-// Verifica se a vida diminuiu e se o personagem não está em estado de hit
-if (global.life < global.previous_life and !isHit) {
+if (global.life < global.previous_life and !is_acertado) {
     sprite_index = spr_player_acertado;
     image_index = 0;
     isHit = true;
     alarm[0] = sprite_get_number(spr_player_acertado) * 10;
+	is_acertado = true;
 }
-
 if (alarm[0] == -1) {
     isHit = false;
+	is_acertado = false
 }
 
 if (sprite_index == spr_player_acertado and image_index >= image_number - 1) {
     sprite_index = spr_player;
     image_index = 0;
+	is_acertado = false
 }
 
 global.previous_life = global.life;
-
 if (global.life < 1) {
     if (sprite_index != spr_player_morto) {
         sprite_index = spr_player_morto;
+		is_morto= true
         image_speed = 1;
         spd = 0;
     }
 
     if (image_index >= image_number - 1) {
         image_speed = 0;
+		is_morto= true;
+		is_jumping= false;
+   	    is_moving = false;
+		is_attacking = false;
         image_index = image_number - 1;
     }
 }
+
+change_animation()
 #endregion
+
