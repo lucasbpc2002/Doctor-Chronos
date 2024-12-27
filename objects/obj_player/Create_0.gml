@@ -13,6 +13,7 @@ image_speed = 0.6;
 is_attacking = false
 is_moving = false;
 is_jumping = false;
+isHit = false;
 sprite_idle = spr_player;
 sprite_walk = spr_player_andando;
 sprite_jump = spr_player_pulo;

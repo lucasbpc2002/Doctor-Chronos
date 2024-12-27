@@ -9,8 +9,8 @@
   "name":"obj_option_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Scr_quiz",
-    "path":"folders/Scripts/Scr_quiz.yy",
+    "name":"Objs_quiz",
+    "path":"folders/Objetos/Objs_quiz.yy",
   },
   "parentObjectId":null,
   "persistent":false,
