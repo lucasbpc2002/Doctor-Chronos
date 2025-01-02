@@ -36,8 +36,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites_all",
-    "path":"folders/Sprites/Sprites_all.yy",
+    "name":"Tesla",
+    "path":"folders/Sprites/Tesla.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

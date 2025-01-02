@@ -118,6 +118,20 @@ if (is_attacking) {
 }
 #endregion
 
+#region Recarga de Balas
+// Verifica se as balas acabaram e se o cooldown de recarga terminou
+if (global.bullet <= 0 && reload_cooldown <= 0) {
+    reload_cooldown = reload_time; // Inicia o cooldown de recarga
+} else if (reload_cooldown > 0) {
+    reload_cooldown--; // Decrementa o cooldown de recarga
+}
+
+// Recarregar as balas quando o cooldown terminar
+if (reload_cooldown <= 0 && global.bullet <= 0) {
+    global.bullet = global.max_bullet; // Recarrega as balas
+}
+#endregion
+
 #region Mudança de sprites
 
 // Função para trocar a animação
@@ -130,29 +144,28 @@ function change_animation() {
         sprite_index = sprite_walk; 
     } else if (is_acertado) {
      	sprite_index = sprite_acertado;
-	} else if(is_morto){
+	} else if(global.is_morto){
 		sprite_index= sprite_morto;
 	}
 	else {
         sprite_index = sprite_idle;
-
     }
 }
 #endregion
 
 #region Atualização do estado do jogador
-if (_left || _right) {
+if (_left || _right and sprite_index != spr_player_morto ) {
     is_moving = true;
 } else {
     is_moving = false;
 }
 
-if (_jump and !is_jumping) {
+if (_jump and !is_jumping and sprite_index != spr_player_morto) {
     is_jumping = true;
 } else if (vspd == 0) {
     is_jumping = false;
 }
-if (global.life < global.previous_life and !is_acertado) {
+if (global.life < global.previous_life and !is_acertado and sprite_index != spr_player_morto) {
     sprite_index = spr_player_acertado;
     image_index = 0;
     isHit = true;
@@ -174,14 +187,14 @@ global.previous_life = global.life;
 if (global.life < 1) {
     if (sprite_index != spr_player_morto) {
         sprite_index = spr_player_morto;
-		is_morto= true
+		global.is_morto= true;
         image_speed = 1;
         spd = 0;
     }
 
     if (image_index >= image_number - 1) {
         image_speed = 0;
-		is_morto= true;
+		global.is_morto= true;
 		is_jumping= false;
    	    is_moving = false;
 		is_attacking = false;
@@ -191,4 +204,3 @@ if (global.life < 1) {
 
 change_animation()
 #endregion
-
