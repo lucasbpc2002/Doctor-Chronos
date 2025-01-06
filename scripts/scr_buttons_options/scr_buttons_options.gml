@@ -9,6 +9,7 @@ draw_self();
 var altura_caixa = 30;
 var largura_caixa =300; 
 
+
 if (mouse_x >= x && mouse_x <= x + 128 && mouse_y >= y && mouse_y <= y + 64 || (point_in_rectangle(mouse_x, mouse_y, bbox_left, bbox_top, bbox_right, bbox_bottom))
 ) {
 	
@@ -39,4 +40,5 @@ draw_set_color(-1);  // Define a cor do texto como branco
 draw_set_halign(-1);
 draw_set_valign(-1);
 
-}
+}	
+

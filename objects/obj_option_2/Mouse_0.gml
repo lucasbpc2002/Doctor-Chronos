@@ -1,2 +1,7 @@
 
-scr_verificar_resposta(string(ds_list_find_value(global.lista,1)))
+var option= ds_list_find_value(global.lista, 1)
+if(is_undefined(option)){
+//BLOQUEADO
+}else{
+scr_verificar_resposta(option)
+}
