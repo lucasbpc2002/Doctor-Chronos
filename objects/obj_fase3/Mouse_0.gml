@@ -1,1 +1,1 @@
-room_goto(rm_room1);
+room_goto(rm_introTesla);

@@ -13,7 +13,7 @@ var dir_x = dx / dist;
 var dir_y = dy / dist;
 
 // Aplique um impulso para trás com uma certa força (ajuste a força conforme necessário)
-var push_strength = 20; //A força do empurrão
+var push_strength = 10; //A força do empurrão
 var push_x = dir_x * push_strength;
 var push_y = dir_y * push_strength;
 

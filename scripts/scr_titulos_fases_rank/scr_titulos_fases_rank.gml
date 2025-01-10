@@ -4,7 +4,7 @@ function scr_titulos_fases_rank(_nome, _font){
 draw_self();
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_set_color(make_color_rgb(135, 129, 190));
+draw_set_color(make_color_rgb(102, 45, 145));
 
 // Desenha o título "Cadastro"
 //draw_text(x-50, y-50, "Cadastro de Nome");

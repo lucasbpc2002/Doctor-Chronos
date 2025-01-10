@@ -1,1 +1,1 @@
-room_goto(rm_room3);
+room_goto(rm_introleonidas);

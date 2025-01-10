@@ -1,1 +1,1 @@
-room_goto(rm_room2);
+room_goto(rm_introJoana);

@@ -1,5 +1,3 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
 #region Colisão
   // COLISÃO HORIZONTAL 1
 	var _move = (hspd) * max_hspd;

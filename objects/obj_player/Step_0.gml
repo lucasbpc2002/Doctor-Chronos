@@ -185,6 +185,8 @@ if (sprite_index == spr_player_acertado and image_index >= image_number - 1) {
 
 global.previous_life = global.life;
 if (global.life < 1) {
+	scr_atualizar_pergunta(room)
+	room_goto(rm_room_quiz)
     if (sprite_index != spr_player_morto) {
         sprite_index = spr_player_morto;
 		global.is_morto= true;
