@@ -1,1 +1,1 @@
- scr_menu_buttons("Fase 1");
+ scr_menu_buttons("idade antiga");

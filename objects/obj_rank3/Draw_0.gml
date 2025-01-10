@@ -1,1 +1,1 @@
-scr_menu_buttons(" Ranking 3")
+scr_menu_buttons(" Ranking da idade contemporânea")

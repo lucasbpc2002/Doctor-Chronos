@@ -1,1 +1,1 @@
- scr_menu_buttons("Fase 2");
+ scr_menu_buttons("idade média");

@@ -82,7 +82,7 @@ if (dash_active) {
     x += dash_speed * dash_direction;
 
     // Parar ao atingir as bordas do cenário ou paredes
-    if (x <= 0 || x >= room_width || place_meeting(x + dash_speed * dash_direction, y, obj_floor2)) {
+    if (x <= 0 || x >= room_width || place_meeting(x+ dash_speed * dash_direction, y, obj_floor2)) {
         dash_active = false;
         dash_cooldown = cooldown_max; // Iniciar o cooldown
         sprite_index = spr_Leonidas;  // Voltar para a sprite padrão

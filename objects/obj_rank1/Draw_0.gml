@@ -1,2 +1,2 @@
-scr_menu_buttons(" Ranking 1")
+scr_menu_buttons(" Ranking da idade antiga")
 

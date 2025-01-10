@@ -1,1 +1,1 @@
-scr_menu_buttons(" Ranking 2")
+scr_menu_buttons(" Ranking da idade média")
