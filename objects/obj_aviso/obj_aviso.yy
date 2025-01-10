@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_aviso",
-  "eventList":[],
+  "%Name":"obj_aviso",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_aviso",
+  "name":"obj_aviso",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objs_personagens",
+    "path":"folders/Objetos/Objs_personagens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

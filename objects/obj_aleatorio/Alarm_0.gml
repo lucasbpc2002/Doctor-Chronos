@@ -1,12 +1,10 @@
+instance_destroy(obj_aviso)
 
- _random_x = random(room_width);
-if(_random_x <global.position_chef-40){
-global.instancia=instance_create_layer(_random_x, 0, "Instances_1", obj);
+global.pos_x = random(room_width);  
+show_debug_message(global.pos_x)
+//show_message_async(pos_x)
 
-alarm[0] = room_speed *2; 
-}else{
+instance_create_layer(global.pos_x, y, "Instances_1", obj_aviso);
 
-alarm[0] = room_speed *1; 
-}	
-
-//instance_destroy(obj);
+alarm[0] = room_speed * 2; 
+alarm[1]=room_speed*2

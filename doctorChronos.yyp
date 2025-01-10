@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"doctorChronos",
   "resources":[
@@ -52,12 +52,8 @@
     {"id":{"name":"fnt_button","path":"fonts/fnt_button/fnt_button.yy",},},
     {"id":{"name":"fnt_menu_subTitulo_cadastro","path":"fonts/fnt_menu_subTitulo_cadastro/fnt_menu_subTitulo_cadastro.yy",},},
     {"id":{"name":"fnt_questions","path":"fonts/fnt_questions/fnt_questions.yy",},},
-<<<<<<< Updated upstream
-    {"id":{"name":"Obj_aviso","path":"objects/Obj_aviso/Obj_aviso.yy",},},
-=======
     {"id":{"name":"obj_aleatorio","path":"objects/obj_aleatorio/obj_aleatorio.yy",},},
     {"id":{"name":"obj_aviso","path":"objects/obj_aviso/obj_aviso.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"obj_button_cadastro","path":"objects/obj_button_cadastro/obj_button_cadastro.yy",},},
     {"id":{"name":"obj_cadastro_button","path":"objects/obj_cadastro_button/obj_cadastro_button.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
@@ -160,10 +156,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_room_menu","path":"rooms/rm_room_menu/rm_room_menu.yy",},},
+    {"roomId":{"name":"rm_room1","path":"rooms/rm_room1/rm_room1.yy",},},
     {"roomId":{"name":"rm_room2","path":"rooms/rm_room2/rm_room2.yy",},},
     {"roomId":{"name":"rm_room_quiz","path":"rooms/rm_room_quiz/rm_room_quiz.yy",},},
     {"roomId":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},},
-    {"roomId":{"name":"rm_room1","path":"rooms/rm_room1/rm_room1.yy",},},
     {"roomId":{"name":"rm_room_rank","path":"rooms/rm_room_rank/rm_room_rank.yy",},},
     {"roomId":{"name":"rm_room_cadastro","path":"rooms/rm_room_cadastro/rm_room_cadastro.yy",},},
     {"roomId":{"name":"rm_room_menu_fases","path":"rooms/rm_room_menu_fases/rm_room_menu_fases.yy",},},
