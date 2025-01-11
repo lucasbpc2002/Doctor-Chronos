@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_aviso",
+  "%Name":"obj_aviso",
   "eventList":[],
   "managed":true,
-  "name":"Obj_aviso",
+  "name":"obj_aviso",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
