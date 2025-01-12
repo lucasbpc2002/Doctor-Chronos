@@ -1,0 +1,2 @@
+texto="Leônidas I foi rei de Esparta e liderou os 300 guerreiros espartanos na Batalha das Termópilas contra o exército persa de Xerxes I em 480 a.C. Sua resistência heroica tornou-se um símbolo de coragem e sacrifício em defesa da liberdade. Apesar da derrota, sua liderança inspirou a união das cidades-estado gregas contra a invasão persa."
+scr_instros(texto)

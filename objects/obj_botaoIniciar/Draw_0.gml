@@ -1,1 +1,2 @@
-scr_menu_buttons("iniciar")
+
+scr_button_iniciar("iniciar")

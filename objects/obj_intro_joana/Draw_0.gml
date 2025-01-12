@@ -1,0 +1,2 @@
+texto="Joana d'Arc foi uma camponesa francesa que liderou exércitos contra os ingleses na Guerra dos Cem Anos, acreditando estar cumprindo uma missão divina. Capturada, foi julgada por heresia e queimada na fogueira em 1431. Décadas depois, foi reabilitada e tornou-se santa, sendo um símbolo de fé e patriotismo.";
+scr_instros(texto)
