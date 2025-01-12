@@ -1,0 +1,1 @@
+instance_create_layer(global.pos_x, y, "Instances_1", obj_raio_Tesla);
