@@ -1,1 +1,1 @@
-scr_menu_buttons("como jogar")
+scr_menu_buttons("Como jogar",x+40,y+40)

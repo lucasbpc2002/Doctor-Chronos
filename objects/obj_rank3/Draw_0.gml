@@ -1,1 +1,1 @@
-scr_menu_buttons(" Ranking da idade contemporânea")
+scr_menu_buttons(" Ranking da Idade Contemporânea",x+20,y+30)

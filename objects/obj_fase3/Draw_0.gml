@@ -1,1 +1,1 @@
- scr_menu_buttons("idade contemporânea");
+ scr_menu_buttons("Idade Contemporânea",x+20,y+30);

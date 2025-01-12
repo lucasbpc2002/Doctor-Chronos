@@ -7,7 +7,7 @@ if(room = rm_comoMovimentar){
 
 	// Desenha o nome digitado
 	draw_set_font(fnt_1);
-	draw_text(x+20, y-15, "movimentos do player");
+	draw_text(x+20, y-15, "Movimentos do player");
 
 
 
@@ -25,7 +25,7 @@ if(room = rm_comoMovimentar){
 
 	// Desenha o nome digitado
 	draw_set_font(fnt_1);
-	draw_text(x+32, y-15, "como atacar?");
+	draw_text(x+32, y-15, "Como atacar?");
 
 
 
@@ -43,7 +43,7 @@ if(room = rm_comoMovimentar){
 
 	// Desenha o nome digitado
 	draw_set_font(fnt_1);
-	draw_text(x+220, y-15, "pra que serve o quiz no jogo?");
+	draw_text(x+220, y-15, "Pra que serve o quiz no jogo?");
 
 
 	//reset
@@ -60,7 +60,7 @@ if(room = rm_comoMovimentar){
 
 	// Desenha o nome digitado
 	draw_set_font(fnt_1);
-	draw_text(x+100, y-15, "como jogar?");
+	draw_text(x+100, y-15, "Como jogar?");
 
 	//reset
 	draw_set_color(-1);

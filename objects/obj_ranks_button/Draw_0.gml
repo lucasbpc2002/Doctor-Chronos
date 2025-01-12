@@ -1,1 +1,1 @@
-scr_menu_buttons("Ranks")
+scr_menu_buttons("Ranks",x+60,y+40)

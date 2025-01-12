@@ -1,6 +1,6 @@
 draw_self();
 draw_set_color(c_white);  // Define a cor do texto como branco
-draw_set_halign(fa_center);
+draw_set_halign(fa_middle);
 draw_set_valign(fa_top);
 
 // Desenha o título "Cadastro"
@@ -8,7 +8,7 @@ draw_set_valign(fa_top);
 
 // Desenha o nome digitado
 draw_set_font(fnt_1);
-draw_text(x-1, y-200, "Cadastrar Nome ");
+draw_text(x+300, y+150, "Cadastrar Nome ");
 
 //reset
 draw_set_font(-1);

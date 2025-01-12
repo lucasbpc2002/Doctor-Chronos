@@ -22,3 +22,5 @@ global.is_ataque=true;
 is_aviso=false;
 global.position_chef=x;
 //show_message_async(x)
+is_raio_active = false; // Controle do ataque de raio
+animation_done = false; // Controle de término da animação

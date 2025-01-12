@@ -6,6 +6,7 @@
   ],
   "managed":true,
   "name":"obj_intro_joana",
+
   "overriddenProperties":[],
   "parent":{
     "name":"Objs_intro",

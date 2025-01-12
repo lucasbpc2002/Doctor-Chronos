@@ -1,1 +1,1 @@
- scr_menu_buttons("idade média");
+ scr_menu_buttons("Idade Média",x+20,y+30);

@@ -1,1 +1,1 @@
- scr_menu_buttons("Fases");
+ scr_menu_buttons("Fases",x+60,y+40);
