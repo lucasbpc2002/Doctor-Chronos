@@ -1,3 +1,11 @@
+if(global.pause){
+	image_speed = 0;
+	exit;
+	}
+	else{
+		image_speed = 1
+	}
+
 #region Colisão
   // COLISÃO HORIZONTAL 1
 	var _move = (hspd) * max_hspd;

@@ -1,3 +1,14 @@
+if(global.pause){
+	image_speed = 0;
+	speed = 0
+	exit;
+	}
+	else{
+		image_speed = 1
+		speed = 6
+	}
+
+
 if (obj_player.x > x) {
     image_xscale = -1; // Virado para a direita
 } else {
@@ -16,8 +27,6 @@ if (is_tracking) {
     }
 }
 
-// Movimento constante do tiro
-speed = 6;
 
 // Reduz a duração de vida do tiro
 lifetime -= 1;

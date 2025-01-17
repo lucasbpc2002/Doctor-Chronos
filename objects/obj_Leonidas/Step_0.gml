@@ -1,5 +1,11 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+if(global.pause){
+	image_speed = 0;
+	exit;
+	}
+	else{
+		image_speed = 1
+	}
+
 #region colisão
   // COLISÃO HORIZONTAL 1
 	var _move = (hspd) * max_hspd;

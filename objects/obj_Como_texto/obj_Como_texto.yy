@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_intro_joana",
+  "%Name":"obj_Como_texto",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_intro_joana",
+  "name":"obj_Como_texto",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objs_intro",
-    "path":"folders/Objetos/Objs_Menu/Objs_intro.yy",
+    "name":"Objs_Menu",
+    "path":"folders/Objetos/Objs_Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,6 +6,7 @@ var _resposta= ds_list_find_value(global.resposta,0)
 draw_self()
 
  if(_resposta == _alternativa){
+
   global.resposta_certa=_resposta;
 
 show_message("Parabéns")
@@ -13,6 +14,7 @@ show_message("Parabéns")
  }else{
   
 show_message("Errou, a resposta correta é: "+_resposta)
+
  // image_blend=make_color_rgb(255, 0, 0);
  }
 alarm[0]=60;
