@@ -5,6 +5,7 @@ vspd = 0;
 grv = 1;
 max_hspd= 0.5;
 
+global.room_atual=room;
 
 // Variáveis de controle
 dash_active = false;
@@ -21,6 +22,9 @@ sprite_ataque_raio= spr_Tesla_attack_raio;
 global.is_ataque=true;
 is_aviso=false;
 global.position_chef=x;
+
+global.raio=false;
+global.dash_Tesla=0;
 //show_message_async(x)
 is_raio_active = false; // Controle do ataque de raio
 animation_done = false; // Controle de término da animação

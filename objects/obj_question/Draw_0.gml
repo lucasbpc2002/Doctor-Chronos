@@ -8,10 +8,10 @@ draw_set_color(c_black);
 
 if (global.lista_perguntas != "") {
   if(is_undefined(texto)){
-    draw_text_ext(x-90,y, "carregando os dados..", largura_caixa, altura_caixa);
+    draw_text_ext(x-80,y, "carregando os dados..", largura_caixa, altura_caixa);
    }else {
  
-   draw_text_ext(x-90,y, texto, largura_caixa, altura_caixa);
+   draw_text_ext(x-80,y, texto, largura_caixa, altura_caixa);
   }
 }
 

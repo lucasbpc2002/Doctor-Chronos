@@ -1,2 +1,2 @@
 
-scr_button_iniciar("iniciar",)
+scr_button_iniciar("iniciar")

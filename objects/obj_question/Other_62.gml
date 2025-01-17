@@ -25,6 +25,7 @@
         // Mostrar as alternativas
         for (var j = 0; j < array_length_1d(alternativas); j++) {
           // show_debug_message("Alternativa " + string(j+1) + ": " + alternativas[j]);
+			
 			ds_list_add(global.lista,alternativas[j])
         }
     

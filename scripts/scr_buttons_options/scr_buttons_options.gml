@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_buttons_options(_nome){
-
+function scr_buttons_options(_nome, _color){
 button_over = false; // Variável para indicar se o mouse está sobre o botão
 
 
@@ -21,8 +20,11 @@ draw_set_font(fnt_questions);
 
 
 button_over = true;
-image_blend=make_color_rgb(133, 96, 169);//cor do retangulo
-image_alpha =0.5;//opacidade
+image_blend=_color;
+
+image_alpha =0.255;
+//cor do retangulo
+//image_alpha =0.5;//opacidade
 
 }else{
 button_over = false;
@@ -31,12 +33,17 @@ draw_set_font(fnt_questions);
 draw_set_valign(fa_middle);
 
  draw_text_ext(x+10,y, _nome, altura_caixa,largura_caixa);
-image_blend=make_color_rgb(102, 45, 145);
-image_alpha =0.300;
+image_blend=_color;
+
+image_alpha =2.5;
 }
+
 draw_set_font(-1);
 draw_set_color(-1);  // Define a cor do texto como branco
 draw_set_halign(-1);
 draw_set_valign(-1);
+
+
+
 
 }

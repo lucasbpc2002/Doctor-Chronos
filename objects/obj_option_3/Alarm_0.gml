@@ -1,0 +1,1 @@
+room_goto(global.room_atual); 

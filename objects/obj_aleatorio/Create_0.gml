@@ -1,7 +1,6 @@
 // Definir uma posição aleatória dentro do limite da sala
-var pos_x = random(room_width);   // Posição X aleatória
-
-instance_create_layer(pos_x, y, "Instances_1", obj_aviso);
+position_aviso=0;
+position_aviso2=0;
 
 //instance_create_layer(pos_x, y, "Instances_1", obj_raio_Tesla);
-alarm[0] = room_speed * 2;
+global.dash_raio=0;

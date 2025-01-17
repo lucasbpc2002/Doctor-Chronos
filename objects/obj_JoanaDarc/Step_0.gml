@@ -75,32 +75,26 @@ if (shot_count >= max_shots) {
     attack_timer = 0; // Reseta o timer de ataque
 }
 #endregion
-
 #region ataque de pulo
 // Verifica se o chefe já está no meio de um salto
-if (!jumping) {
-    // Verifica se o jogador está em uma plataforma acima do chefe
-    if (obj_player.y < y - sprite_height && abs(obj_player.x - x) < 200) {
+distance = abs(x - obj_player.x); 
+if(!jumping){  
+    if ((distance <= sprite_width) and obj_player.y >800) {
         // Preparar o pulo
         jumping = true;                       // Define que o chefe está pulando
         target_x = obj_player.x;              // Posição X do jogador no momento do pulo
         target_y = obj_player.y;              // Posição Y do jogador no momento do pulo
-        vspd = jump_speed;          // Define a velocidade inicial do salto
-        sprite_index = spr_Joana_salto;       // Troca para a animação do salto
-    }
-} else {
-    // Executa a física do salto
-    y += vspd;                      // Atualiza a posição Y
-    vspd += grv;                // Aplica a gravidade
+        vspd = jump_speed+10;        
+		 
+        sprite_index = spr_Joana_salto;  
+   show_debug_message(obj_player.x)
+   show_debug_message("distancia:"+string(distance))
+   }else{
+     sprite_index = spr_joana;  
+	 
+   show_debug_message(obj_player.x);
+   }
+}else{
 
-    // Move o chefe na direção da posição X do jogador capturada
-    if (x < target_x) x += 4;                 // Move para a direita
-    else if (x > target_x) x -= 4;            // Move para a esquerda
-
-    // Verifica se o chefe atingiu o chão
-    if (place_meeting(x, y + 1, obj_floor2)) {
-        jumping = false;                      // Define que o chefe não está mais pulando
-        sprite_index = spr_joana;             // Volta para a animação padrão
-    }
 }
 #endregion

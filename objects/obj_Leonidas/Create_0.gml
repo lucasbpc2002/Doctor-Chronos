@@ -5,7 +5,8 @@ vspd = 0;
 grv = 1;
 max_hspd= 0.5;
 
-
+global.dash_Leonidas=0;
+global.room_atual=room;
 // Variáveis de controle
 dash_active = false;
 dash_speed = 15;

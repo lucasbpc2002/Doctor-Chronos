@@ -61,7 +61,7 @@ if (!initial_cooldown_active && global.is_morto == false && platform != noone &&
     if (player_platform == platform) {
         // Ativar o dash
         dash_active = true;
-
+			
         // Definir direção do dash (baseado na posição do player)
         dash_direction = sign(obj_player.x - x);
         
@@ -71,6 +71,8 @@ if (!initial_cooldown_active && global.is_morto == false && platform != noone &&
         // Trocar para animação de dash
         sprite_index = spr_Tesla_attack_propulsor;
         image_index = 0;
+		
+         global.dash_Tesla=1;
     }
 }
 
@@ -78,20 +80,38 @@ if (!initial_cooldown_active && global.is_morto == false && platform != noone &&
 if (dash_active) {
     // Movimentar o chefe
     x += dash_speed * dash_direction;
-
+	
     // Parar ao atingir as bordas do cenário ou paredes
     if (x <= 0 || x >= room_width || place_meeting(x + dash_speed * dash_direction, y, obj_floor1)) {
         dash_active = false;
         dash_cooldown = cooldown_max; // Iniciar o cooldown
-        sprite_index = spr_Tesla;  // Voltar para a sprite padrão
+        sprite_index = spr_Tesla_attack_raio;  // Voltar para a sprite padrão
+		
+       global.dash_Tesla=1;	
+         alarm[0]=40;
+	
     }
 
     // Parar ao colidir com o player
     if (place_meeting(x, y, obj_player)) {
-        dash_active = false;
+        
         dash_cooldown = cooldown_max; // Iniciar o cooldown
-        sprite_index = spr_Tesla;  // Voltar para a sprite padrão
-    }
+         sprite_index = spr_Tesla_attack_raio;  // Voltar para a sprite padrão
+		     dash_active = false;
+             
+             global.dash_Tesla=1;
+			 
+			 alarm[0]=40;
+			
+
+	}
+	
+	//sprite_index = spr_Tesla;  // Voltar para a sprite padrão
+		   
+
+
+	
+	
 }
 
 #endregion
