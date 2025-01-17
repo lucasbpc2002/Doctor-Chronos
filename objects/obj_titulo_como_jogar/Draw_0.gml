@@ -7,7 +7,7 @@ if(room = rm_comoMovimentar){
 
 	// Desenha o nome digitado
 	draw_set_font(fnt_1);
-	draw_text(x+20, y-15, "Movimentos do player");
+	draw_text(x+20, y-15, "Movimentação");
 
 
 
