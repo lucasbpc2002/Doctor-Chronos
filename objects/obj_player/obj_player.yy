@@ -14,6 +14,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shoot_joanaDarc","path":"objects/obj_shoot_joanaDarc/obj_shoot_joanaDarc.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_flecha_Leonidas","path":"objects/obj_flecha_Leonidas/obj_flecha_Leonidas.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_raio_Tesla","path":"objects/obj_raio_Tesla/obj_raio_Tesla.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_player",

@@ -9,54 +9,54 @@ if(room = rm_room3){
 }
 
 
-if global.life_chefe = 16{
+if global.life_chefe2 = 16{
 draw_sprite(spr_life_chefes,16,720,27)
 }
-if global.life_chefe = 15{
+if global.life_chefe2 = 15{
 draw_sprite(spr_life_chefes,15,720,27)
 }
-if global.life_chefe = 14{
+if global.life_chefe2 = 14{
 draw_sprite(spr_life_chefes,14,720,27)
 }
-if global.life_chefe = 13{
+if global.life_chefe2 = 13{
 draw_sprite(spr_life_chefes,13,720,27)
 }
-if global.life_chefe = 12{
+if global.life_chefe2 = 12{
 draw_sprite(spr_life_chefes,12,720,27)
 }
-if global.life_chefe = 11{
+if global.life_chefe2 = 11{
 draw_sprite(spr_life_chefes,11,720,27)
 }
-if global.life_chefe = 10{
+if global.life_chefe2 = 10{
 draw_sprite(spr_life_chefes,10,720,27)
 }
-if global.life_chefe = 9{
+if global.life_chefe2 = 9{
 draw_sprite(spr_life_chefes,9,720,27)
 }
-if global.life_chefe = 8{
+if global.life_chefe2 = 8{
 draw_sprite(spr_life_chefes,1,720,27)
 }
-if global.life_chefe = 7{
+if global.life_chefe2 = 7{
 draw_sprite(spr_life_chefes,7,720,27)
 }
-if global.life_chefe = 6{
+if global.life_chefe2 = 6{
 draw_sprite(spr_life_chefes,6,720,27)
 }
-if global.life_chefe = 5{
+if global.life_chefe2 = 5{
 draw_sprite(spr_life_chefes,5,720,27)
 }
-if global.life_chefe = 4{
+if global.life_chefe2 = 4{
 draw_sprite(spr_life_chefes,4,720,27)
 }
-if global.life_chefe = 3{
+if global.life_chefe2 = 3{
 draw_sprite(spr_life_chefes,3,720,27)
 }
-if global.life_chefe = 2{
+if global.life_chefe2 = 2{
 draw_sprite(spr_life_chefes,2,720,27)
 }
-if global.life_chefe = 1{
+if global.life_chefe2 = 1{
 draw_sprite(spr_life_chefes,1,720,27)
 }
-if global.life_chefe <= 0{
+if global.life_chefe2 <= 0{
 draw_sprite(spr_life_chefes,0,720,27)
 }

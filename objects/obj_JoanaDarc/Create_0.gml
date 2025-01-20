@@ -1,5 +1,5 @@
-// Variáveis iniciais do chefe
-global.life_chefe = 16;
+
+global.life_chefe2 = global.life_chefe;
 global.room_atual=room;
 spd = 5;
 hspd = 0;

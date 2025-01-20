@@ -94,12 +94,12 @@ if(!jumping){
         vspd = jump_speed+10;        
 		 
         sprite_index = spr_Joana_salto;  
-   show_debug_message(obj_player.x)
-   show_debug_message("distancia:"+string(distance))
+   //show_debug_message(obj_player.x)
+  // show_debug_message("distancia:"+string(distance))
    }else{
      sprite_index = spr_joana;  
 	 
-   show_debug_message(obj_player.x);
+  // show_debug_message(obj_player.x);
    }
 }else{
 

@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fase_button",
+  "%Name":"obj_vidas",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_fase_button",
+  "name":"obj_vidas",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objs_Menu",
-    "path":"folders/Objetos/Objs_Menu.yy",
+    "name":"Objs_personagens",
+    "path":"folders/Objetos/Objs_personagens.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_botoes",
-    "path":"sprites/spr_botoes/spr_botoes.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,4 +1,6 @@
-global.life_chefe = 16;
+
+global.life_chefe2 = global.life_chefe;
+
 spd = 5;
 hspd = 0;
 vspd = 0;

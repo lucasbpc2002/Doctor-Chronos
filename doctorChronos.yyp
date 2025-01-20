@@ -44,7 +44,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"doctorChronos",
   "resources":[
@@ -118,6 +118,7 @@
     {"id":{"name":"obj_titulointro","path":"objects/obj_titulointro/obj_titulointro.yy",},},
     {"id":{"name":"obj_tituloMenu","path":"objects/obj_tituloMenu/obj_tituloMenu.yy",},},
     {"id":{"name":"obj_tituloRank","path":"objects/obj_tituloRank/obj_tituloRank.yy",},},
+    {"id":{"name":"obj_vidas","path":"objects/obj_vidas/obj_vidas.yy",},},
     {"id":{"name":"obj_voltarMenu_button","path":"objects/obj_voltarMenu_button/obj_voltarMenu_button.yy",},},
     {"id":{"name":"rm_comoAtirar","path":"rooms/rm_comoAtirar/rm_comoAtirar.yy",},},
     {"id":{"name":"rm_comoJogar","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},},
