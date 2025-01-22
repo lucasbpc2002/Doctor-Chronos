@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_titulo_como_jogar",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_titulo_como_jogar",
   "overriddenProperties":[],
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_titulo_comojogar",
+    "path":"sprites/spr_titulo_comojogar/spr_titulo_comojogar.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

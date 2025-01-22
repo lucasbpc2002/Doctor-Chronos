@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_tituloFases",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_tituloFases",
   "overriddenProperties":[],
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Titulo_menufases",
+    "path":"sprites/spr_Titulo_menufases/spr_Titulo_menufases.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

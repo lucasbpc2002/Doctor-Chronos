@@ -78,8 +78,6 @@ if (!initial_cooldown_active && global.is_morto == false && platform != noone &&
 
         // Trocar para animação de dash
         sprite_index = spr_Leonidas_attack_investida;
-		global.dash_Leonidas=1;
-		alarm[0]=30;
         image_index = 0;
     }
 }
@@ -89,19 +87,22 @@ if (dash_active) {
     // Movimentar o chefe
     x += dash_speed * dash_direction;
 
-    // Parar ao atingir as bordas do cenário ou paredes
-    if (x <= 0 || x >= room_width || place_meeting(x+ dash_speed * dash_direction, y, obj_floor2)) {
-        dash_active = false;
-        dash_cooldown = cooldown_max; // Iniciar o cooldown
-       alarm[0]=30 // Voltar para a sprite padrão
-    }
-
-    // Parar ao colidir com o player
+    // Parar o dash ao colidir com o player
     if (place_meeting(x, y, obj_player)) {
         dash_active = false;
         dash_cooldown = cooldown_max; // Iniciar o cooldown
-        alarm[0]=30 // Voltar para a sprite padrão
+        sprite_index = spr_Leonidas;  // Voltar para a sprite padrão
+
+        // Causar dano ao player (opcional)
+        with (obj_player) {
+            global.life -= 1; // Exemplo: Reduzir HP
+        }
+    }
+    // Parar o dash ao atingir as bordas do cenário ou uma parede
+    else if (x <= 0 || x >= room_width || place_meeting(x + dash_speed * dash_direction, y, obj_floor2)) {
+        dash_active = false;
+        dash_cooldown = cooldown_max; // Iniciar o cooldown
+        sprite_index = spr_Leonidas;  // Voltar para a sprite padrão
     }
 }
-
 #endregion

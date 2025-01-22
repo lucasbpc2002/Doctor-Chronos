@@ -1,0 +1,1 @@
+global.current_music = noone; // Nenhuma música tocando inicialmente

@@ -1,0 +1,1 @@
+scr_menu_buttons("reiniciar a fase",x+50,y+40)

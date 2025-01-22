@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_tituloRank",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_tituloRank",
   "overriddenProperties":[],
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Titulo_menur_ranking",
+    "path":"sprites/spr_Titulo_menur_ranking/spr_Titulo_menur_ranking.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

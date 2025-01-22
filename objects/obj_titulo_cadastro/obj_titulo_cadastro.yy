@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_titulo_cadastro",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_titulo_cadastro",
   "overriddenProperties":[],
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_form",
-    "path":"sprites/spr_form/spr_form.yy",
+    "name":"spr_titulocadastro",
+    "path":"sprites/spr_titulocadastro/spr_titulocadastro.yy",
   },
   "spriteMaskId":null,
   "visible":true,

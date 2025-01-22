@@ -1,1 +1,0 @@
-scr_titulos_fases_rank("Ranking por fases", fnt_1)

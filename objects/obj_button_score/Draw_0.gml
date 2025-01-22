@@ -1,0 +1,1 @@
+scr_menu_buttons("verificar pontuação",x+30,y+40)

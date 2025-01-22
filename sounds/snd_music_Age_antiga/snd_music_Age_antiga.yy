@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_music_Age_antiga",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":240.024,
+  "name":"snd_music_Age_antiga",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_music_Age_antiga.mp3",
+  "type":0,
+  "volume":0.59,
+}
