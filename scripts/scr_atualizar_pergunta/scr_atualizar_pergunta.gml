@@ -16,5 +16,5 @@ global.resposta= ds_list_create();
     var _api_url = "http://localhost:8080/questions/"+string(2)+"/";
     http_get(_api_url);
 }
-
+global.room_atual=_room_da_vez;
 }

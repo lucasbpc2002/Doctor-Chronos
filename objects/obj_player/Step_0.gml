@@ -1,3 +1,4 @@
+
 if(global.pause){
 	image_speed = 0;
 	exit;
@@ -5,7 +6,9 @@ if(global.pause){
 	else{
 		image_speed = 1
 	}
+		
 
+//show_debug_message("vida: "+string(global.test));
 #region Controles
 var _left, _right, _jump, _attack;
 _right = keyboard_check(ord("D")); // direita
@@ -13,6 +16,7 @@ _left = keyboard_check(ord("A")); // esquerda
 _jump = keyboard_check(ord("W")); // pulo
 _attack = keyboard_check(ord("J")); // ataque de fogo
 #endregion
+
 
 #region Movimentação
 var _move = (_left - _right) * max_hspd;
@@ -173,7 +177,7 @@ if (_jump and !is_jumping and sprite_index != spr_player_morto) {
 } else if (vspd == 0) {
     is_jumping = false;
 }
-if (global.life < global.previous_life and !is_acertado and sprite_index != spr_player_morto) {
+if (global.life2 < global.previous_life and !is_acertado and sprite_index != spr_player_morto) {
     sprite_index = spr_player_acertado;
     image_index = 0;
     isHit = true;
@@ -191,8 +195,8 @@ if (sprite_index == spr_player_acertado and image_index >= image_number - 1) {
 	is_acertado = false
 }
 
-global.previous_life = global.life;
-if (global.life < 1) {
+global.previous_life = global.life2;
+if (global.life2 < 1) {
 	scr_atualizar_pergunta(room)
 	room_goto(rm_room_quiz)
     if (sprite_index != spr_player_morto) {
@@ -211,6 +215,6 @@ if (global.life < 1) {
         image_index = image_number - 1;
     }
 }
-
+show_debug_message("life:"+string(global.life2));
 change_animation()
 #endregion

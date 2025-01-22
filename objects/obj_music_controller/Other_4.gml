@@ -11,6 +11,9 @@ if (room == rm_room1) {
 	audio_stop_sound(snd_music_menu);
     target_music = snd_music_Age_antiga;
 } else {
+	audio_stop_sound(snd_music_Age_antiga)
+	audio_stop_sound(snd_music_Age_media)
+	audio_stop_sound(snd_music_Age_contemporanea)
     target_music = snd_music_menu;
 }
 

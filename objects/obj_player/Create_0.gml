@@ -1,12 +1,14 @@
-global.life_chefe = 16;
+
+global.life_chefe2 =global.life_chefe;
 spd = 5;
 hspd = 0;
 vspd = 0;
 grv = 1;
 max_hspd= 0.5;
-
-global.life = 4;
-global.previous_life = global.life;
+// No evento Create do objeto
+global.acerto=false;
+global.life2=global.life;
+global.previous_life=global.life2;
 global.bullet = 3; // Número inicial de balas
 global.max_bullet = 3; // Número máximo de balas
 reload_cooldown = 0; // Cooldown para recarregar as balas

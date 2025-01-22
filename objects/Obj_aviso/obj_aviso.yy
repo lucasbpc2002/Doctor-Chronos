@@ -8,8 +8,8 @@
   "name":"obj_aviso",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objs_personagens",
-    "path":"folders/Objetos/Objs_personagens.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
