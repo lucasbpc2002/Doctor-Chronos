@@ -1,4 +1,8 @@
+
 /*// Determinar a música correta para a sala atual
+
+/*
+// Determinar a música correta para a sala atual
 var target_music;
 
 if (room == rm_room1) {

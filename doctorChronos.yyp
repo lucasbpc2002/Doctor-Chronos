@@ -234,6 +234,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_room_menu","path":"rooms/rm_room_menu/rm_room_menu.yy",},},
+    {"roomId":{"name":"rm_score","path":"rooms/rm_score/rm_score.yy",},},
     {"roomId":{"name":"rm_GameOver","path":"rooms/rm_GameOver/rm_GameOver.yy",},},
     {"roomId":{"name":"rm_gameWin","path":"rooms/rm_gameWin/rm_gameWin.yy",},},
     {"roomId":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},},
@@ -251,7 +252,6 @@
     {"roomId":{"name":"rm_introJoana","path":"rooms/rm_introJoana/rm_introJoana.yy",},},
     {"roomId":{"name":"rm_introTesla","path":"rooms/rm_introTesla/rm_introTesla.yy",},},
     {"roomId":{"name":"rm_room_menu_ranks","path":"rooms/rm_room_menu_ranks/rm_room_menu_ranks.yy",},},
-    {"roomId":{"name":"rm_score","path":"rooms/rm_score/rm_score.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

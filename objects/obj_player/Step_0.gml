@@ -114,7 +114,6 @@ if (sprite_index != spr_player_morto and _attack and global.bullet > 0 and !is_a
     // Criação do tiro
     with (instance_create_layer(gun_x, gun_y, "Shoot", obj_shoot_player)) {
         global.bullet--;
-        speed = 15;
         direction = flipped == -1 ? 180 : 0;
         image_xscale = flipped;
     }

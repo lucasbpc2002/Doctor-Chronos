@@ -11,8 +11,12 @@ global.resposta_certa=_resposta;
 show_message("Parabéns");
 if(global.life2==0){
 global.life=2;	
+global.score_certas = global.score_certas + 100;
 }else{
+
 	global.life=global.life2;	
+
+	global.life=global.life2;
 }
 
 if(global.life_chefe2 == 12){
@@ -34,12 +38,14 @@ if(global.life_chefe2 == 0){
 	 
      show_message("Errou");
 	 if(global.life2==0){ 
+
 		
 		 room_goto(rm_GameOver);
 		 
 	// global.go_Menu=1;
+
+		 room_goto(rm_GameOver)
      }else{
- 	 global.life=global.life2;
 	 }
 
  	 
