@@ -12,8 +12,7 @@ show_message("Parabéns");
 if(global.life2==0){
 global.life=2;	
 }else{
-	global.life=global.life2;
-	
+	global.life=global.life2;	
 }
 
 if(global.life_chefe2 == 12){
@@ -26,6 +25,7 @@ if(global.life_chefe2 == 4){
 global.life_chefe=2;
 }
 if(global.life_chefe2 == 0){
+
 	room_goto(rm_gameWin)
 }
 //global.life_chefe=2;
@@ -34,7 +34,9 @@ if(global.life_chefe2 == 0){
 	 
      show_message("Errou");
 	 if(global.life2==0){ 
-		 room_goto(rm_GameOver)
+		
+		 room_goto(rm_GameOver);
+		 
 	// global.go_Menu=1;
      }else{
  	 global.life=global.life2;
@@ -51,7 +53,7 @@ if(global.life_chefe2 == 0){
  global.life_chefe=8;
  } 
 	 
-	 
+
 	
     //show_message("Errou, a resposta correta é: "+_resposta)
  }

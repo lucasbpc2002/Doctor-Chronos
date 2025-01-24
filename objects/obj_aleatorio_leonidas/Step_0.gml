@@ -1,4 +1,6 @@
-
+if(global.pause){
+	exit;
+	}
 
 randomize();
 global.pos_x2=random(room_width);

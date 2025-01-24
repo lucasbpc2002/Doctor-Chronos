@@ -1,3 +1,5 @@
+
+		
 // Definir uma posição aleatória dentro do limite da sala
 position_aviso=0;
 position_aviso2=0;
