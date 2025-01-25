@@ -1,1 +1,1 @@
-room_goto(rm_score)
+room_goto(rm_score);

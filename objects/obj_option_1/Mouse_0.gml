@@ -9,6 +9,7 @@ scr_verificar_resposta(option)
  if (global.resposta_certa == option) {
         // Resposta correta: botão verde
         global.flag=4;
+
 		
 		
  }else if(global.resposta_certa !=option){
