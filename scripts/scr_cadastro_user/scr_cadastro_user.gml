@@ -11,7 +11,7 @@ function scr_cadastro_user(){
 
 
         show_message("Cadastro realizado com sucesso, "+global.username);
-		room_goto(rm_room_rank);
+		room_goto(rm_room_menu);
     } else {
         show_message("Por favor, preencha o nome de usuário!");
     }

@@ -34,7 +34,7 @@ if global.life_chefe2 = 9{
 draw_sprite(spr_life_chefes,9,720,27)
 }
 if global.life_chefe2 = 8{
-draw_sprite(spr_life_chefes,1,720,27)
+draw_sprite(spr_life_chefes,8,720,27)
 }
 if global.life_chefe2 = 7{
 draw_sprite(spr_life_chefes,7,720,27)

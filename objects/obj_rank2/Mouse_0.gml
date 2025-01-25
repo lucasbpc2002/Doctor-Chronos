@@ -1,1 +1,1 @@
-room_goto(rm_room_quiz)
+room_goto(rm_room_rank)
