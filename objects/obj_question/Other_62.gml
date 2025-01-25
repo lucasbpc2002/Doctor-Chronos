@@ -4,7 +4,9 @@
     
    if(resposta_json !=""){
       // Converter o JSON em uma lista de dados
-    var lista_perguntas = json_parse(resposta_json);
+	  show_debug_message(string(resposta_json));  // Mostra o valor de resposta_json
+
+     lista_perguntas = json_parse(resposta_json);
     // Agora você pode acessar cada pergunta na lista
     for (var i = 0; i < array_length_1d(lista_perguntas); i++) {
         
@@ -28,11 +30,6 @@
 			
 			ds_list_add(global.lista,alternativas[j])
         }
-    
-
-
-
-
    }else{
    show_message_async("A API N ESTAR CONECTADA")  
    }

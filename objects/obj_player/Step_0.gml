@@ -214,6 +214,7 @@ if (global.life2 < 1) {
         image_index = image_number - 1;
     }
 }
-show_debug_message("life:"+string(global.life2));
+//show_debug_message("life:"+string(global.life2));
 change_animation()
+
 #endregion

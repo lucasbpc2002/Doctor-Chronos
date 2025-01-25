@@ -8,7 +8,7 @@ if (is_undefined(option)) {
     scr_buttons_options("A) "+"...", make_color_rgb(133, 96, 169));
 }else {
 	
-	show_debug_message("B:"+string(global.clickB)+ "A:"+string(global.click))
+	//show_debug_message("B:"+string(global.clickB)+ "A:"+string(global.click))
   if((global.clickB==0 || global.clickB==2 || global.clickC==0 || global.clickC==2 || global.clickD==0 || global.clickD==2) && global.click==1){
 
 	   // global.click=1;

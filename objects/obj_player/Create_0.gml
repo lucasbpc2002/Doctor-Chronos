@@ -5,6 +5,10 @@ hspd = 0;
 vspd = 0;
 grv = 1;
 max_hspd= 0.5;
+
+global.score_certas2 = global.score_certas;
+global.score_erradas2 = global.score_erradas;
+
 // No evento Create do objeto
 global.acerto=false;
 global.life2=global.life;

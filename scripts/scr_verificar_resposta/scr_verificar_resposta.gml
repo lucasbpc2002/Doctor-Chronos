@@ -9,14 +9,17 @@ draw_self()
 global.resposta_certa=_resposta;
 
 show_message("Parabéns");
+
+global.score_certas=global.score_certas+100;
+global.score_certas2=global.score_certas;
+
+	show_debug_message(global.score_certas);
 if(global.life2==0){
 global.life=2;	
-global.score_certas = global.score_certas + 100;
 }else{
 
 	global.life=global.life2;	
 
-	global.life=global.life2;
 }
 
 if(global.life_chefe2 == 12){
@@ -37,6 +40,10 @@ if(global.life_chefe2 == 0){
  }else{
 	 
      show_message("Errou");
+
+global.score_erradas=global.score_erradas+75;
+global.score_erradas2=global.score_erradas;
+
 	 if(global.life2==0){ 
 
 		
@@ -44,8 +51,8 @@ if(global.life_chefe2 == 0){
 		 
 	// global.go_Menu=1;
 
-		 room_goto(rm_GameOver)
      }else{
+		 global.life=global.life2;	
 	 }
 
  	 
@@ -60,9 +67,9 @@ if(global.life_chefe2 == 0){
  } 
 	 
 
-	
     //show_message("Errou, a resposta correta é: "+_resposta)
  }
-alarm[0]=60;
+ 
 
+alarm[0]=60;
 }
