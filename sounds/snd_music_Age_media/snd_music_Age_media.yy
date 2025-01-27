@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_music_Age_media.mp3",
   "type":0,
-  "volume":0.59,
+  "volume":0.6,
 }

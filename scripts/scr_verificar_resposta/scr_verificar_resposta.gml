@@ -26,7 +26,7 @@ if(global.life_chefe2 == 12){
 global.life_chefe=10;
 }
 if(global.life_chefe2 == 8){
-	global.life_chefe=6
+	global.life_chefe=6;
 }
 if(global.life_chefe2 == 4){
 global.life_chefe=2;
@@ -64,6 +64,9 @@ global.score_erradas2=global.score_erradas;
  }
  if(global.life_chefe2 == 4){
  global.life_chefe=8;
+ } 
+ if(global.life_chefe2 == 0){
+ global.life_chefe=4;
  } 
 	 
 

@@ -16,6 +16,7 @@ dash_direction = 0; // Direção do dash (1 para direita, -1 para esquerda)
 platform = noone;   // Plataforma atual
 dash_cooldown = 0;  // Tempo restante para o próximo dash
 cooldown_max = 300; // 5 segundos (300 frames, dependendo de 60 FPS)
+damage_cooldown = 0; // Inicializa o cooldown de dano
 // Cooldown inicial de 120 frames (2 segundos)
 initial_cooldown = 120; // 2 segundos (120 frames)
 initial_cooldown_active = true; // Flag para indicar se o cooldown inicial está ativo

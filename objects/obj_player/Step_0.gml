@@ -52,6 +52,35 @@ if (room == rm_room1) {
         }
     }
     y += vspd;
+	
+	// Garante que o jogador não fique preso dentro do Tesla
+if (place_meeting(x, y, obj_Tesla)) {
+    y -= 2; // Move ligeiramente para cima para liberar a colisão
+}
+	
+// COLISÃO COM O TESLA
+if (place_meeting(x, y + vspd, obj_Tesla)) {
+    var tesla_instance = instance_place(x, y + vspd, obj_Tesla); // Encontra o Tesla colidido
+
+    if (tesla_instance != noone) {
+        // Checa se o jogador está acima do Tesla (tocando o topo)
+        if (vspd > 0 && y + sprite_height / 2 <= tesla_instance.bbox_top) {
+            y = tesla_instance.bbox_top - sprite_height / 2; // Reposiciona para o topo do Tesla
+            vspd = 0; // Zera a velocidade vertical
+        }
+        // Empurra o jogador para fora caso esteja "dentro" do Tesla (não no topo)
+        else {
+            if (y > tesla_instance.bbox_bottom) {
+                y = tesla_instance.bbox_bottom + 1; // Empurra para fora na parte inferior
+            } else if (x < tesla_instance.bbox_left) {
+                x = tesla_instance.bbox_left - sprite_width / 2; // Empurra para a esquerda
+            } else if (x > tesla_instance.bbox_right) {
+                x = tesla_instance.bbox_right + sprite_width / 2; // Empurra para a direita
+            }
+        }
+    }
+}
+
 
     // PULO 1
     if (place_meeting(x, y + 1, obj_floor1) and _jump and sprite_index != spr_player_morto) {
@@ -85,7 +114,65 @@ if (room == rm_room1) {
             is_jumping = false; // Marca que não está mais pulando
         }
     }
+	
+	// COLISÃO COM JOANA
+if (place_meeting(x, y + vspd, obj_JoanaDarc)) {
+    var joana_instance = instance_place(x, y + vspd, obj_JoanaDarc); // Encontra a instância de Joana colidida
+
+    if (joana_instance != noone) {
+        // Checa se o jogador está acima de Joana (tocando o topo)
+        if (vspd > 0 && y + sprite_height / 2 <= joana_instance.bbox_top) {
+            y = joana_instance.bbox_top - sprite_height / 2; // Reposiciona para o topo de Joana
+            vspd = 0; // Zera a velocidade vertical
+        }
+        // Empurra o jogador para fora caso esteja "dentro" de Joana (não no topo)
+        else {
+            if (y > joana_instance.bbox_bottom) {
+                y = joana_instance.bbox_bottom + 1; // Empurra para fora na parte inferior
+            } else if (x < joana_instance.bbox_left) {
+                x = joana_instance.bbox_left - sprite_width / 2; // Empurra para a esquerda
+            } else if (x > joana_instance.bbox_right) {
+                x = joana_instance.bbox_right + sprite_width / 2; // Empurra para a direita
+            }
+        }
+    }
+}
+
+// COLISÃO COM LEÔNIDAS
+if (place_meeting(x, y + vspd, obj_Leonidas)) {
+    var leonidas_instance = instance_place(x, y + vspd, obj_Leonidas); // Encontra a instância de Leônidas colidida
+
+    if (leonidas_instance != noone) {
+        // Checa se o jogador está acima de Leônidas (tocando o topo)
+        if (vspd > 0 && y + sprite_height / 2 <= leonidas_instance.bbox_top) {
+            y = leonidas_instance.bbox_top - sprite_height / 2; // Reposiciona para o topo de Leônidas
+            vspd = 0; // Zera a velocidade vertical
+        }
+        // Empurra o jogador para fora caso esteja "dentro" de Leônidas (não no topo)
+        else {
+            if (y > leonidas_instance.bbox_bottom) {
+                y = leonidas_instance.bbox_bottom + 1; // Empurra para fora na parte inferior
+            } else if (x < leonidas_instance.bbox_left) {
+                x = leonidas_instance.bbox_left - sprite_width / 2; // Empurra para a esquerda
+            } else if (x > leonidas_instance.bbox_right) {
+                x = leonidas_instance.bbox_right + sprite_width / 2; // Empurra para a direita
+            }
+        }
+    }
+}
+
     y += vspd;
+	
+	// Garante que o jogador não fique preso dentro de Joana
+if (place_meeting(x, y, obj_JoanaDarc)) {
+    y -= 1; // Move ligeiramente para cima para liberar a colisão
+}
+
+// Garante que o jogador não fique preso dentro de Leônidas
+if (place_meeting(x, y, obj_Leonidas)) {
+    y -= 10; // Move ligeiramente para cima para liberar a colisão
+}
+
 
     // PULO 2
     if (place_meeting(x, y + 1, obj_floor2) and _jump and sprite_index != spr_player_morto) {

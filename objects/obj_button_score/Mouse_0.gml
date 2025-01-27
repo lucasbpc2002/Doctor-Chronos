@@ -1,1 +1,1 @@
-room_goto(rm_score);
+alarm[0]=20;

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_music_Age_contemporanea.mp3",
   "type":2,
-  "volume":0.59,
+  "volume":0.6,
 }

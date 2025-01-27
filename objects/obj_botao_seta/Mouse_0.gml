@@ -1,9 +1,10 @@
+
 if(room = rm_comoJogar){
-	room_goto(rm_comoMovimentar)
+	 alarm[0]=20;
 }else if (room =  rm_comoMovimentar){
-	room_goto(rm_comoAtirar)
+	alarm[1]=20;
 }else if(room = rm_comoAtirar){
-	room_goto(rm_comoQuiz)
+	alarm[2]=20;
 }else if (room = rm_comoQuiz){
-	room_goto(rm_room_menu)
+	alarm[3]=20;
 }

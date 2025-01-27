@@ -1,7 +1,7 @@
 
-/*// Determinar a música correta para a sala atual
+// Determinar a música correta para a sala atual
 
-/*
+
 // Determinar a música correta para a sala atual
 var target_music;
 
@@ -36,4 +36,3 @@ if (global.current_music != target_music) {
     // Atualizar a música atual
     global.current_music = target_music;
 }
-*/

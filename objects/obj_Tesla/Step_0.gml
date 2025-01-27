@@ -106,9 +106,7 @@ if (dash_active) {
         dash_cooldown = cooldown_max; // Iniciar o cooldown
          sprite_index = spr_Tesla_attack_raio;  // Voltar para a sprite padrão
 		     dash_active = false;
-             
              global.dash_Tesla=1;
-			 
 			 alarm[0]=40;
 			
 

@@ -1,38 +1,36 @@
 if(global.pause){
-	image_speed = 0;
-	exit;
-	}
-	else{
-		image_speed = 1
-	}
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = 1;
+}
 
 #region colisão
-  // COLISÃO HORIZONTAL 1
-	var _move = (hspd) * max_hspd;
+// COLISÃO HORIZONTAL 1
+var _move = (hspd) * max_hspd;
 
-		hspd = _move * spd;
-		vspd += grv;
-		hspd = lerp(hspd, _move, spd);
-    if (place_meeting(x + hspd, y, obj_floor2)) {
-        var _hspd = sign(hspd);
-        hspd = 0;
-        while (!place_meeting(x + _hspd, y, obj_floor2)) {
-            x += _hspd;
-        }
-        hspd = 0;
+hspd = _move * spd;
+vspd += grv;
+hspd = lerp(hspd, _move, spd);
+if (place_meeting(x + hspd, y, obj_floor2)) {
+    var _hspd = sign(hspd);
+    hspd = 0;
+    while (!place_meeting(x + _hspd, y, obj_floor2)) {
+        x += _hspd;
     }
-    x += hspd;
+    hspd = 0;
+}
+x += hspd;
 
-    // COLISÃO VERTICAL 1
-    if (place_meeting(x, y + vspd, obj_floor2)) {
-        var _vspd = sign(vspd);
-        while (!place_meeting(x, y + _vspd, obj_floor2)) {
-            y += _vspd;
-        }
-        vspd = 0;
-
+// COLISÃO VERTICAL 1
+if (place_meeting(x, y + vspd, obj_floor2)) {
+    var _vspd = sign(vspd);
+    while (!place_meeting(x, y + _vspd, obj_floor2)) {
+        y += _vspd;
     }
-    y += vspd;
+    vspd = 0;
+}
+y += vspd;
 #endregion
 
 // Manter o chefe virado na direção do player
@@ -40,6 +38,18 @@ if (obj_player.x > x) {
     image_xscale = -1; // Virado para a direita
 } else {
     image_xscale = 1; // Virado para a esquerda
+}
+
+// Cooldown para dano ao player
+if (damage_cooldown > 0) {
+    damage_cooldown--;
+}
+
+// Verificar colisão com o player e reduzir vida
+if (place_meeting(x, y, obj_player) && damage_cooldown <= 0) {
+    global.life -= 1; // Reduz 1 ponto de vida do player
+    damage_cooldown = 30; // Define um cooldown de 30 frames
+    show_debug_message("Dano ao player! Vida restante: " + string(global.life)); // Debug para verificar o dano
 }
 
 #region Cooldown Inicial
@@ -80,7 +90,7 @@ if (!initial_cooldown_active && global.is_morto == false && platform != noone &&
         sprite_index = spr_Leonidas_attack_investida;
         image_index = 0;
 		
-         global.dash_Leonidas=1;
+        global.dash_Leonidas=1;
     }
 }
 
@@ -95,26 +105,21 @@ if (dash_active) {
         dash_cooldown = cooldown_max; // Iniciar o cooldown
         sprite_index = spr_Leonidas_attack_aereo;  // Voltar para a sprite padrão
 		
-       global.dash_Leonidas=1;	
-         alarm[0]=40;
-	
+        global.dash_Leonidas=1;	
+        alarm[0]=40;
     }
 
     // Parar ao colidir com o player
     if (place_meeting(x, y, obj_player)) {
-        
         dash_cooldown = cooldown_max; // Iniciar o cooldown
-         sprite_index = spr_Leonidas_attack_aereo;  // Voltar para a sprite padrão
-		     dash_active = false;
-             
-             global.dash_Leonidas=1;
-			 
-			 alarm[0]=40;
-			
+		with(obj_player){
+			global.life2 -= 1; // Reduz 1 ponto de vida do player
+		}
+        sprite_index = spr_Leonidas_attack_aereo; // Voltar para a sprite padrão
+        dash_active = false;
+        global.dash_Leonidas = 1;
 
-	}
-	
-	
+        alarm[0] = 40;
+    }
 }
-
 #endregion

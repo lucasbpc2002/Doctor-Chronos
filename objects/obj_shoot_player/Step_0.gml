@@ -1,3 +1,4 @@
+if (room != rm_comoAtirar)
 if (global.pause) {
    speed = 0;
    image_speed = 0;

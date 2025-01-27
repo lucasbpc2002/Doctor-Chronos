@@ -7,11 +7,11 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_661BC377","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
-    {"name":"inst_F264473","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
     {"name":"inst_791762A5","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
     {"name":"inst_42342BF","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
     {"name":"inst_17AC9FCD","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
     {"name":"inst_7AB72C00","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
+    {"name":"inst_F264473","path":"rooms/rm_comoJogar/rm_comoJogar.yy",},
   ],
   "isDnd":false,
   "layers":[
